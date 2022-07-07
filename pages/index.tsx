@@ -40,32 +40,27 @@ export default function Home() {
         </p>
 
         <div className="flex items-center justify-center flex-wrap max-w-[800px]">
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
+          <a href="https://tailwindcss.com" className={styles.card}>
+            <h2>Tailwind CSS &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Learn about Tailwind keeps the app size small while still being
+              easy to use.
             </p>
+          </a>
+
+          <a href="https://mobx.js.org/README.html" className={styles.card}>
+            <h2>MobX &rarr;</h2>
+            <p>A powerful way to manage state without tons of boilerplate!</p>
+          </a>
+
+          <a href="https://pages.github.com/" className={styles.card}>
+            <h2>Github Pages &rarr;</h2>
+            <p>Build a static site and deploy it using Github Actions.</p>
+          </a>
+
+          <a href="https://capacitorjs.com" className={styles.card}>
+            <h2>Capacitor JS &rarr;</h2>
+            <p>Build your web app for mobile with access to native features.</p>
           </a>
         </div>
         <p className="text-center mt-16 text-[1.5rem]">
