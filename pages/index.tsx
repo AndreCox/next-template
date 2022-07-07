@@ -13,15 +13,24 @@ export default function Home() {
       </Head>
 
       <main className="min-h-screen p-4 flex flex-1 flex-col justify-center items-center text-4xl">
-        <h1 className="font-bold">
+        <h1 className="font-bold text-center">
           Welcome to{" "}
           <a
-            href="https://nextjs.org"
-            className="text-blue-500 underline decoration-transparent  hover:decoration-blue-500 transition-all"
+            href="https://github.com/andrecox/next-template"
+            className="text-blue-500 underline decoration-transparent hover:decoration-blue-500 transition-all"
           >
             Next Template!
           </a>
         </h1>
+        <h2 className="mt-2">
+          Powered by{" "}
+          <a
+            href="https://nextjs.org"
+            className="text-blue-500 underline decoration-transparent hover:decoration-blue-500 transition-all"
+          >
+            Next.js
+          </a>
+        </h2>
 
         <p className="text-center m-16 text-[1.5rem]">
           Get started by editing{" "}
@@ -63,7 +72,9 @@ export default function Home() {
           MobX state management built in!
         </p>
         <Link href="/mobx">
-          <a className="text-blue-500 under text-xl">Check it out here</a>
+          <a className="text-blue-500 under text-xl underline decoration-transparent  hover:decoration-blue-500 transition-all">
+            Check it out here
+          </a>
         </Link>
       </main>
     </div>
