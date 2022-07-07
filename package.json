@@ -9,7 +9,9 @@
     "export": "next export",
     "lint": "next lint",
     "build-mobile": "next build && next export && cap sync",
-    "open-browser": "open-cli http://localhost:3000"
+    "open-browser": "open-cli http://localhost:3000",
+    "android": "yarn build && next export && cap run android",
+    "ios": " next export && cap run ios"
   },
   "dependencies": {
     "@capacitor/android": "^3.6.0",
@@ -17,6 +19,7 @@
     "@capacitor/core": "^3.6.0",
     "@capacitor/ios": "^3.6.0",
     "mobx": "^6.6.1",
+    "mobx-react-lite": "^3.4.0",
     "next": "12.2.0",
     "open-cli": "^7.0.1",
     "react": "18.2.0",

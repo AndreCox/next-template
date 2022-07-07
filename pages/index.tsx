@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -58,6 +59,12 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <p className="text-center mt-16 text-[1.5rem]">
+          MobX state management built in!
+        </p>
+        <Link href="/mobx">
+          <a className="text-blue-500 under text-xl">Check it out here</a>
+        </Link>
       </main>
     </div>
   );
