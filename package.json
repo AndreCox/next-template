@@ -4,14 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "yarn open-browser && next dev",
+    "dev:desktop": "concurrently -k true -n \"Tauri Process, Next Server\" \"yarn tauri dev\" \"yarn dev:no-open\"",
+    "dev:no-open": "next dev",
     "build": "next build",
+    "build:mobile": "next build && next export && cap sync",
+    "build:desktop": "next build && next export && tauri build",
     "start": "next start",
     "export": "next export",
     "lint": "next lint",
-    "build-mobile": "next build && next export && cap sync",
-    "open-browser": "open-cli http://localhost:3000",
     "android": "yarn build && next export && cap run android",
-    "ios": "yarn build && next export && cap run ios"
+    "ios": "yarn build && next export && cap run ios",
+    "open-browser": "open-cli http://localhost:3000"
   },
   "dependencies": {
     "@capacitor/android": "^3.6.0",
@@ -26,9 +29,11 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.0.3",
     "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
     "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
     "postcss": "^8.4.14",

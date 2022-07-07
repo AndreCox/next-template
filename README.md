@@ -15,6 +15,7 @@ This template is the predecessor to my previous react template which you can fin
 3. 🪶 Comes with Tailwindcss by default; no more thinking up css class names while still being lightweight
 4. 📄 Github Pages support, simply push your code and your website will be automatically deployed.
 5. ⏭️ NEW! Next Js seriously makes development way easier. The major update from previous template.
+6. 🖥️ NEW! Tauri Support Build for Windows Mac and Linux
 
 ## Getting Started
 
@@ -41,7 +42,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 ## Building for mobile
 
 ```bash
-yarn build-mobile
+yarn build:mobile
 ```
 
 You can open in your ide of choice with
@@ -61,6 +62,100 @@ yarn  ios
 To deploy your site to github pages, simply update the `.github\workflows\gh-pages.deploy.yml` file to set the `NEXT_PUBLIC_BASE_PATH:` to the name of your repository. For instance this repository would be `\next-template`
 
 You can also update this file to only deploy when you push to a specific branch. For instance `release`
+
+## Build for Desktop
+
+To develop for desktop (Windows, MacOS, Linux). Simply run
+
+```bash
+yarn dev:desktop
+```
+
+Once you are happy with your project you can build a production release with
+
+```bash
+yarn build:desktop
+```
+
+This will output your compiled app to the `src-tauri/target/release` directory. Bundled releases can be found in `src-tauri/target/release/bundle`
+
+In the future this template will come with a github action you can configure to build for Mac Windows and Linux and publish it to github releases.
+
+## All commands
+
+### This lists all commands avalable and their functions
+
+starts dev server and opens browser
+
+```bash
+yarn dev
+```
+
+starts dev server doesn't open browser
+
+```bash
+yarn dev:no-open
+```
+
+starts dev server and opens desktop app
+
+```bash
+yarn dev:desktop
+```
+
+next build generates an optimized version of your application for production
+
+```bash
+yarn build
+```
+
+builds your app for mobile Android or IOS
+
+```bash
+yarn build:mobile
+```
+
+builds your app for desktop MacOS, Windows, or Linux
+
+```bash
+yarn build:desktop
+```
+
+starts the application in production mode
+
+```bash
+yarn start
+```
+
+exports site to static version in `/out` folder
+
+```bash
+yarn export
+```
+
+runs code linting using eslint
+
+```bash
+yarn lint
+```
+
+builds and runs project on Android device
+
+```bash
+yarn android
+```
+
+builds and runs project on IOS device
+
+```bash
+yarn ios
+```
+
+opens the browser on default development port
+
+```bash
+yarn open-browser
+```
 
 ## Learn More
 
