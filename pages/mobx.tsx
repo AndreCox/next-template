@@ -1,5 +1,5 @@
 import Input from "../components/Input";
-import { store } from "./../stores/Store";
+import { store } from "../stores/Store";
 import { observer } from "mobx-react-lite";
 import Link from "next/link";
 

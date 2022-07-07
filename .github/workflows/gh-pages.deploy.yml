@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     env:
       # if you are deploying to github pages you will replace this with the name of your repository
