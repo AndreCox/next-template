@@ -11,7 +11,7 @@
     "build-mobile": "next build && next export && cap sync",
     "open-browser": "open-cli http://localhost:3000",
     "android": "yarn build && next export && cap run android",
-    "ios": " next export && cap run ios"
+    "ios": "yarn build && next export && cap run ios"
   },
   "dependencies": {
     "@capacitor/android": "^3.6.0",
