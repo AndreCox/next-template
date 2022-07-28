@@ -1,5 +1,7 @@
 {
   "name": "next-template",
+  "author": "Andre Cox",
+  "description": "Next Template for building cross platform apps fast",
   "version": "0.1.0",
   "private": true,
   "scripts": {
