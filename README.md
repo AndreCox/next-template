@@ -1,4 +1,4 @@
-# next-template
+# Next Template
 
 This is a [Next.js](https://nextjs.org/) template that is pre setup with mobile using capacitor.js, Tailwind CSS and MobX.
 
