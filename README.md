@@ -14,8 +14,8 @@ This template is the predecessor to my previous react template which you can fin
 2. 📱 Fully cross platform, you can create your web app, then deploy to both IOS and Android
 3. 🪶 Comes with Tailwindcss by default; no more thinking up css class names while still being lightweight
 4. 📄 Github Pages support, simply push your code and your website will be automatically deployed.
-5. ⏭️ NEW! Next Js seriously makes development way easier. The major update from previous template.
-6. 🖥️ NEW! Tauri Support Build for Windows Mac and Linux
+5. ⏭️ Next Js seriously makes development way easier. The major update from previous template.
+6. 🖥️ Tauri Support Build for Windows Mac and Linux
 
 ## Getting Started
 
