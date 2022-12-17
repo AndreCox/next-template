@@ -1,4 +1,4 @@
-# next-template
+# Next Template
 
 This is a [Next.js](https://nextjs.org/) template that is pre setup with mobile using capacitor.js, Tailwind CSS and MobX.
 
@@ -18,6 +18,14 @@ This template is the predecessor to my previous react template which you can fin
 6. 🖥️ Tauri Support Build for Windows Mac and Linux
 
 ## Getting Started
+
+### The new method
+I recommend installing my [nextgen CLI tool](https://github.com/AndreCox/next-gen/releases/latest).
+Once this is installed and added to your path all you need to do is type `nextgen`. This tool will guide you through the setup process. 
+The following steps are uneccesary.
+
+### Old method
+
 
 First, install dependencies:
 
