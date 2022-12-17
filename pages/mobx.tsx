@@ -7,9 +7,9 @@ const MobX = observer(() => {
   return (
     <div className="text-center p-4 pt-24">
       <Link href="/">
-        <a className="text-blue-500 under text-xl absolute top-0 left-0 pl-4 pt-2 underline decoration-transparent hover:decoration-blue-500 transition-colors">
+        <div className="text-blue-500 under text-xl absolute top-0 left-0 pl-4 pt-2 underline decoration-transparent hover:decoration-blue-500 transition-colors">
           Back to home
-        </a>
+        </div>
       </Link>
       <h1 className="font-bold text-4xl">MobX State Management Demo</h1>
       <div className="pt-4 flex flex-1 flex-col sm:flex-row justify-center sm:space-x-8 space-y-8 sm:space-y-0">

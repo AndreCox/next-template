@@ -67,9 +67,9 @@ export default function Home() {
           MobX state management built in!
         </p>
         <Link href="/mobx">
-          <a className="text-blue-500 under text-xl underline decoration-transparent  hover:decoration-blue-500 transition-all">
+          <div className="text-blue-500 under text-xl underline decoration-transparent  hover:decoration-blue-500 transition-all">
             Check it out here
-          </a>
+          </div>
         </Link>
       </main>
     </div>
